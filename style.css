@@ -140,3 +140,9 @@ h1 {
 .details:first-child {
     border-right: 2px solid #fcfcfc;
 }
+
+@media (max-width: 575px) {
+    button {
+        padding: revert;
+    }
+}
