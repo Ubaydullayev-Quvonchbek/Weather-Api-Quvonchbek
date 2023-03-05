@@ -13,8 +13,8 @@ button.onclick = () => {
             let min = document.querySelector('h3');
             city.innerHTML = data.name
             sunny_cloudy.innerHTML = data.weather[0].main
-            gradus.innerHTML = Math.floor(data.main.temp) + "°"
-            max.innerHTML = Math.floor(data.main.temp_max) + "°"
+            gradus.innerHTML = Math.ceil(data.main.temp) + "°"
+            max.innerHTML = Math.ceil(data.main.temp) + "°"
             min.innerHTML = Math.floor(data.main.feels_like) + "°"
             input.value = ""
             console.log(data);
